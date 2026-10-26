@@ -6,7 +6,6 @@
 | `yolo_track.ipynb` | `MultiStreamTracker` 클래스: 2채널을 캡처/추론/표시 스레드와 `Queue`로 분리해 동시에 추적하고, 객체 특징 벡터를 채널 간 L2 거리로 비교. `stream1_<시간>.mp4`, `stream2_<시간>.mp4`로 녹화 |
 
 - 가중치(`yolov8n.pt`, `yolov8s.pt`)는 `.gitignore`로 제외되며, `ultralytics`가 첫 실행 시 자동으로 받습니다.
-- 실행 전에 RTSP 주소의 `<USER>:<PASSWORD>@<CAMERA_IP>`를 바꾸세요.
 
 ## 참고
 - `botsort_test.ipynb`: 추적 대상이 없는 프레임에서는 `results[0].boxes.id`가 `None`이라 `.int()` 호출에서 오류가 납니다.
